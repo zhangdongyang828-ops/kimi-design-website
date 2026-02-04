@@ -1,13 +1,110 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deepen Design</title>
-    <script type="module" crossorigin src="./assets/index-BT2_JRKg.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-8A0_Oqi5.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deepen Design</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.header {
+  text-align: center;
+  padding: 4rem 0;
+  color: white;
+}
+.header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+.content {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  margin-top: 2rem;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.feature {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.feature h3 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  color: #666;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Deepen Design</h1>
+    <p>Kimi Agent Deepen Design 官网 - React单页应用</p>
+  </header>
+  
+  <main class="content">
+    <h2>欢迎来到 Deepen Design</h2>
+    <p>这是一个专业的室内设计平台，提供全方位的设计服务。</p>
+    
+    <div class="features">
+      <div class="feature">
+        <h3>AI设计</h3>
+        <p>智能AI辅助设计，快速生成设计方案</p>
+      </div>
+      <div class="feature">
+        <h3>BIM建模</h3>
+        <p>专业的BIM建模服务，精确到毫米</p>
+      </div>
+      <div class="feature">
+        <h3>家具定制</h3>
+        <p>个性化家具定制，满足您的独特需求</p>
+      </div>
+      <div class="feature">
+        <h3>照明设计</h3>
+        <p>专业的照明设计，营造舒适氛围</p>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <p>© 2026 Deepen Design. 版权所有.</p>
+    <p>GitHub Pages 部署成功！</p>
+  </footer>
+</div>
+</body>
 </html>
